@@ -339,6 +339,12 @@
     <ClCompile Include="병수ㅜ의 촌ㅅ.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="11441_합 구하기.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="1244_스위치 켜고 끄기.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="input.txt" />
