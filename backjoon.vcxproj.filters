@@ -345,6 +345,15 @@
     <ClCompile Include="1244_스위치 켜고 끄기.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="9442_Sort me.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="2292_벌집cpp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="1149_rgb거리_2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="input.txt" />

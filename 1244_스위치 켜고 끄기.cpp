@@ -21,7 +21,10 @@ void women(int standardNum)
 				switchArr[standardNum + i] = 1;
 				switchArr[standardNum - i] = 1;
 			}
-	
+		}
+		else
+		{
+			break;
 		}
 	}
 }
@@ -73,8 +76,8 @@ int main()
 	{
 		cout << switchArr[i];
 		if (i % 20 == 0)
-			cout <<" "<< endl;
-		else 
+			cout << endl;
+		else if (i!= switchNum)
 			cout << " ";
 	}
 
