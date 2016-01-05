@@ -369,6 +369,15 @@
     <ClCompile Include="2133_타일 채우기.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="2513_통학버스.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="2573_빙산.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="1268_임시 반장 정하기.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="input.txt" />
