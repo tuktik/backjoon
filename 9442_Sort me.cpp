@@ -62,6 +62,20 @@ void swap(int first, int end)
 	word[end] = temp;
 }
 
+void sort(int wordCount)
+{
+	for (int i = 0; i < wordCount;i++)
+	{
+		for (int j = i; j < wordCount; j++)
+		{
+			if (compare(j, i))
+			{
+				swap(i, j);
+			}
+		}
+	}
+}
+/*
 void sort(int first, int end)
 {
 	//cout << "first" << first << "end" << end << endl;
@@ -86,7 +100,9 @@ void sort(int first, int end)
 	if (f< end) sort(f, end);
 
 	
-}
+}*/
+
+
 int main()
 {
 	int wordCount;
@@ -113,7 +129,7 @@ int main()
 
 		//swap(0, 1);
 		
-		sort(0,wordCount-1);
+		sort(wordCount);
 
 		for (int i = 0; i < wordCount; i++)
 		{
