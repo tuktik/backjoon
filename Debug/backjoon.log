@@ -1,9 +1,9 @@
-﻿빌드 시작: 2016-01-05 오후 3:58:26
-     1>2 노드의 "C:\Users\lee\Documents\GitHub\backjoon\backjoon.vcxproj" 프로젝트(Build 대상)입니다.
+﻿Build started 2016-01-21 오후 6:39:22.
+     1>Project "C:\Users\lee\Documents\GitHub\backjoon\backjoon.vcxproj" on node 2 (Build target(s)).
      1>Link:
          backjoon.vcxproj -> C:\Users\lee\Documents\GitHub\backjoon\Debug\backjoon.exe
-     1>"C:\Users\lee\Documents\GitHub\backjoon\backjoon.vcxproj" 프로젝트를 빌드했습니다(Build 대상).
+     1>Done Building Project "C:\Users\lee\Documents\GitHub\backjoon\backjoon.vcxproj" (Build target(s)).
 
-빌드했습니다.
+Build succeeded.
 
-경과 시간: 00:00:00.40
+Time Elapsed 00:00:00.07
