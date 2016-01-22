@@ -423,10 +423,13 @@
     <ClCompile Include="11650_좌표 정렬하기.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="10867_중복 빼고 정렬하기.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="9081_단어 맞추기.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="10867_중복 빼고 정렬하기.cpp">
+    <ClCompile Include="8979_올림픽_2.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

@@ -48,26 +48,25 @@ int main()
 		cin >> wordArr;
 		int wordLen = strlen(wordArr);
 
-		bool is_swap = false;
-		int j;
-
-		for (int k = wordLen - 1; k > 0; k--)
+		int swapA = -1;
+		int swapB;
+		int j,k;
+		for (k = wordLen - 1; k >= 0; k--)
 		{
-			for (j = k - 1; j >= 0; j--)
+			for (j = k ; j >= 0 && wordArr[j] >= wordArr[k]; j--);
+			if (j >= 0 && swapA<j)
 			{
-				if (wordArr[j] < wordArr[k])
-				{
-					is_swap = true;
-					swaping(j, k);
-					break;
-				}
+				swapA = j;
+				swapB = k;
 			}
-			if (is_swap == true)
-				break;
 		}
 		
-		if (is_swap==1)
-			quick(j + 1, wordLen - 1);
+		if (swapA != -1)
+		{
+			swaping(swapA, swapB);
+			quick(swapA + 1, wordLen - 1);
+		}
+			
 
 		//swaping(wordLen - 2, wordLen - 1);
 
@@ -78,3 +77,38 @@ int main()
 
 	return 0;
 }
+
+//
+//#include <stdlib.h>
+//#include <stdio.h>
+//#include <string.h>
+//
+//char a[101], k;
+//int t, i, j, m, n;
+//
+//int cmp(void *a, void *b)
+//{
+//	return (char*)a>(char*)b ? 1 : (char*)a<(char*)b ? -1 : 0;
+//}
+//void main()
+//{
+//	for (scanf("%d ", &t); t--; puts(a))
+//	{
+//		m = -1;
+//		for (i = strlen(gets(a)) - 1; i >= 0; i--)
+//		{
+//			for (j = i; j >= 0 && a[i] <= a[j]; j--);
+//			if (j >= 0 && m<j)
+//			{ 
+//				m = j; 
+//				n = i;
+//				printf("%d %d\n", n, m);
+//			}
+//		}
+//		if (m != -1)
+//		{
+//			for (k = a[n]; n>m; n--)a[n] = a[n - 1]; a[m] = k;
+//			qsort(a + m + 1, strlen(a + m + 1), 1, cmp);
+//		}
+//	}
+//}
