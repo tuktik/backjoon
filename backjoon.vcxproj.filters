@@ -432,6 +432,12 @@
     <ClCompile Include="8979_올림픽_2.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="2643_색종이 올려 놓기.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="1931_회의실배정.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="input.txt" />
