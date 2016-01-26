@@ -438,6 +438,12 @@
     <ClCompile Include="1931_회의실배정.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="11067_모노톤길.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="1327_소트 게임.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="input.txt" />

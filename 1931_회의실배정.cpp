@@ -1,4 +1,5 @@
 #include <iostream>
+#include <limits.h>
 
 using namespace std;
 
@@ -9,8 +10,8 @@ int dp[100005];
 void quick(int first, int end)
 {
 	int pivot[2];
-	pivot[0] = arr[(first + 2) / 2][0];
-	pivot[1] = arr[(first + 2) / 2][1];
+	pivot[0] = arr[(first + end) / 2][0];
+	pivot[1] = arr[(first + end) / 2][1];
 	int f = first;
 	int e = end;
 
@@ -52,7 +53,27 @@ int main()
 
 	quick(1, n);
 
+	/*for (int i = 1; i <= n; i++)
+	{
+		cout << arr[i][0] << " "<<arr[i][1] << endl;
+	}*/
 
+	int min = INT_MAX;
+	int min_idx;
+	int count = 0;
+
+	for (int i = n; i >= 1; i--)
+	{
+		if (arr[i][1] <= min)
+		{
+			min = arr[i][0];
+			min_idx = i;
+			count++;
+		}
+
+	}
+
+	cout << count << endl;
 	
 	
 	return 0;
