@@ -34,27 +34,35 @@ int main()
 
 		printf("%d\n", count);
 		//cout << count << endl;
-		
-		
 
 		nArr[L] = -partArr[sqrtL-1];
 		nArr[R] = -partArr[sqrtR];
 		
+		if (sqrtL < sqrtR)
+		{
+			for (j = L + 1; j <sqrtL*sqrtL; j++)
+			{
+				nArr[j]++;
+			}
+
+			for (j = sqrtL; j < sqrtR; j++)
+			{
+				partArr[j]++;
+			}
+
+			for (j = sqrtR*sqrtR; j <R; j++)
+			{
+				nArr[j]++;
+			}
+		}
+		else
+		{
+			for (j = L + 1; j < R; j++)
+			{
+				nArr[j]++;
+			}
+		}
 		
-		for (j = L + 1; j <sqrtL*sqrtL; j++)
-		{
-			nArr[j]++;
-		}
-
-		for (j = sqrtL; j < sqrtR; j++)
-		{
-			partArr[j]++;
-		}
-
-		for (j = sqrtR*sqrtR; j <R; j++)
-		{
-			nArr[j]++;
-		}
 
 	}
 
