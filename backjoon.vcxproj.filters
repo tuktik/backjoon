@@ -444,6 +444,9 @@
     <ClCompile Include="1327_소트 게임.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="2251_물통.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="input.txt" />
