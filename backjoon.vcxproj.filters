@@ -447,6 +447,15 @@
     <ClCompile Include="2251_물통.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="11060_점프 점프.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="10476_좁은 미술전시관.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="3653_영화 수집.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="input.txt" />
