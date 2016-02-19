@@ -471,6 +471,18 @@
     <ClCompile Include="8394_악수.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="10870_피보나치 5.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="2178_미로탐색2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="2665_미로만들기2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="1463_1로 만들기.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="input.txt" />
