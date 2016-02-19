@@ -456,6 +456,15 @@
     <ClCompile Include="3653_영화 수집.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="2624_동전 바꿔주기.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="1987_알파벳.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="2665_미로만들기.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="input.txt" />
