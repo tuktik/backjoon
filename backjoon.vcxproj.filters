@@ -504,6 +504,21 @@
     <ClCompile Include="1941_소문난 칠공주.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="11726_2n타일링.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="11727_2n타일링2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="8394_악수2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="4811_알약.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="11053_가장 긴 증가하는 수열.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="input.txt" />

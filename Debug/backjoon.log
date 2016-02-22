@@ -1,9 +1,2 @@
-﻿Build started 2016-02-22 오후 1:08:44.
-     1>Project "C:\Users\lee\Documents\GitHub\backjoon\backjoon.vcxproj" on node 2 (Build target(s)).
-     1>Link:
-         backjoon.vcxproj -> C:\Users\lee\Documents\GitHub\backjoon\Debug\backjoon.exe
-     1>Done Building Project "C:\Users\lee\Documents\GitHub\backjoon\backjoon.vcxproj" (Build target(s)).
-
-Build succeeded.
-
-Time Elapsed 00:00:00.08
+﻿  11053_가장 긴 증가하는 수열.cpp
+  backjoon.vcxproj -> C:\Users\lee\Documents\GitHub\backjoon\Debug\backjoon.exe
