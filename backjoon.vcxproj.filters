@@ -528,6 +528,9 @@
     <ClCompile Include="2503_숫자 야구.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="1445_일요일 아침의 데이트.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="input.txt" />
