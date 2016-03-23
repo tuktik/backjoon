@@ -552,6 +552,9 @@
     <ClCompile Include="1992_쿼드트리.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="1835_카드.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="input.txt" />

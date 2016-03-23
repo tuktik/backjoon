@@ -21,11 +21,20 @@ public:
 
 //(¾Æ½ºÅ° 124), '-', '+', '1', '2', '3', '4'
 
+int dx[4] = { 0, 1, 0, -1 };
+int dy[4] = { 1, 0, -1, 0 };
+
 void dfs(int x, int y, int direction)
 {
 	if (arr[y][x] == 'M')
 	{
-
+		for (int i = 0; i < 4; i++)
+		{
+			if (y + dy[i] >= 0 && x + dx[i] >= 0 && y + dy[i] < r && x + dx[i] < c)
+			{
+				if (arr[y + dy[i]][x+dx[i]] == )
+			}
+		}
 	}
 
 	if (arr[y][x] == '|')
