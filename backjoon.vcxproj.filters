@@ -555,6 +555,51 @@
     <ClCompile Include="1835_카드.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="8896_가위 바위 보.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="1514_자물쇠.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="1629_곱셈.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="2609_최대공약수와 최소공배수.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="6588_골드바흐의 추측.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="9095_1,2,3 더하기.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="10430_나머지.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="11052_붕어빵 판매하기.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="11401_이항 계수 3.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="1890_점프.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="1915_가장 큰 정사각형.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="1463_1로 만들기2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="2291_Sequence.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="1365_꼬인 전깃줄.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="2291_Sequence2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="input.txt" />
