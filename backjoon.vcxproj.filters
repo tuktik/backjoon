@@ -645,6 +645,9 @@
     <ClCompile Include="1520_내리막길.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="1132_합.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="input.txt" />
