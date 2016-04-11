@@ -1,89 +1,9 @@
-#include <cstdio>
-#include <vector>
-#include <algorithm>
-#include <queue>
-
-using namespace std;
-
-typedef pair<int, int> pii;
-#define mp(x,y) make_pair(x,y)
-
-
-int N, M, X,A,B,D;
-
-vector<vector<pii> > redge,edge;
-
-int main()
-{
-	scanf("%d %d %d", &N, &M, &X);
-	edge = redge = vector<vector<pii> >(N + 1);
-
-
-	for (int i = 0; i < M; i++)
-	{
-		scanf("%d %d %d", &A, &B, &D);
-		redge[B].push_back(mp(A, D));
-		edge[A].push_back(mp(B, D));
-	}
-
-	vector<int> GoDist(N + 1, -1); // 값이 -1인 원소 N+1개 보관
-	vector<int> BackDist(N + 1, -1);
-
-	priority_queue<pii> pq; // 
-	GoDist[X] = 0;
-	pq.push(mp(GoDist[X], X));
-
-	while (!pq.empty())
-	{
-		int here = pq.top().second, nowDist = -pq.top().first;
-		pq.pop();
-		for (int i = 0; i < redge[here].size(); i++)
-		{
-			int there = redge[here][i].first,nextDist=nowDist + redge[here][i].second;
-			if (GoDist[there] == -1 || GoDist[there] > nextDist)
-			{
-				GoDist[there] = nextDist;
-				pq.push(mp(-GoDist[there], there));
-			}
-		}
-	}
-	
-	BackDist[X] = 0;
-	pq.push(mp(-BackDist[X], X));
-	
-	while (!pq.empty())
-	{
-		int here = pq.top().second, nowDist = -pq.top().first;
-		pq.pop();
-		for (int i = 0; i < edge[here].size(); i++)
-		{
-			int there = edge[here][i].first, nextDist = nowDist + edge[here][i].second;
-			if (BackDist[there] == -1 || BackDist[there] > nextDist)
-			{
-				BackDist[there] = nextDist;
-				pq.push(mp(-BackDist[there], there));
-			}
-		}
-	}
-	int sol = 0;
-	for (int i = 1; i <= N; i++)
-		sol = max(sol, GoDist[i]+BackDist[i]);
-	printf("%d", sol);
-}
-
-
-#if 0
-#include <stdio.h>
+// 플로이드 워셜
 #include <iostream>
-#include <queue>
 
 using namespace std;
 
 int distArr[1001][1001];
-int nodeToX[1001];
-int xToNode[1001];
-
-int check[1001];
 
 int main()
 {
@@ -92,8 +12,7 @@ int main()
 	// m은 도로
 	// x는 모이는 마을
 
-	scanf("%d %d %d", &n, &m, &x);
-	//cin >> n >> m >> x;
+	cin >> n >> m >> x;
 
 	int start;
 	int end;
@@ -101,7 +20,9 @@ int main()
 
 	for (int i = 0; i < m; i++)
 	{
-		scanf("%d %d %d", &start, &end, &dist);
+		cin >> start;
+		cin >> end;
+		cin >> dist;
 
 		distArr[start][end] = dist;
 	}
@@ -116,66 +37,139 @@ int main()
 		}
 		//cout << endl;
 	}
-	
-	queue<int> djQueue;
 
-	djQueue.push(x);
-
-	while (!djQueue.empty())
+	/*if (i == j)
+	continue;*/
+	for (int k = 1; k <= n; k++)
 	{
-		int nowps = djQueue.front();
-		djQueue.pop();
-
-		for (int i = 1; i < n; i++)
+		for (int i = 1; i <= n; i++)
 		{
-			if (nowps == i)
-				continue;
-			
-			nodeToX[i] != 0;
+			if (distArr[i][k] == 9999999)	continue;
+			for (int j = 1; j <= n; j++)
+			{
+				if (i == k || j == k || i==j)
+					continue;
+				if (distArr[i][j]> distArr[i][k] + distArr[k][j])
+					distArr[i][j] = distArr[i][k] + distArr[k][j];
 
-			djQueue.
 
+			}
 		}
-
-		
 	}
 
 	int max = 0;
 
-	printf("%d\n", max);
-	//cout << max << endl;
+	for (int i = 1; i <= n; i++)
+	{
+		if (i != x)
+		{
+			
+			if (max < distArr[i][x] + distArr[x][i])
+				max = distArr[i][x] + distArr[x][i];
+		}
+
+	}
+
+	cout << max << endl;
 
 	return 0;
 }
 
-/*
-for (int i = 1; i <= n; i++)
+// 다익스트라
+#if 0
+#include <cstdio>
+#include <iostream>
+#include <vector>
+#include <algorithm>
+#include <queue>
+#include <cstring>
+
+using namespace std;
+
+typedef pair<int, int> pii;
+#define mp(x,y) make_pair(x,y)
+
+int n, m, x;
+int a, b, dist;
+int goDist[1005];
+int backDist[1005];
+
+int main()
 {
-for (int j = 1; j <= n; j++)
-{
-if (i == j)
-continue;
-for (int k = 1; k <= n; k++)
-{
-if (i == k || j==k)
-continue;
-if (distArr[i][j]> distArr[i][k] + distArr[k][j])
-distArr[i][j] = distArr[i][k] + distArr[k][j];
-}
-}
-}
+	cin >> n >> m >> x;
+
+	vector<vector<pii > > edge(n + 1);
+	vector<vector<pii > > redge(n + 1);
+
+	for (int i = 0; i < m; i++)
+	{
+		cin >> a >> b >> dist;
+
+		edge[a].push_back(mp(b, dist));
+		redge[b].push_back(mp(a, dist));
+	}
+
+	
+	priority_queue<pii> pq;
+	memset(goDist, -1, sizeof(goDist));
+
+	goDist[x] = 0;
+	pq.push(mp(-goDist[x],x));
+
+	while (!pq.empty())
+	{
+		int nowDist = -pq.top().first;
+		int nowPos = pq.top().second;
+		pq.pop();
+
+		for (int i = 0; i < edge[nowPos].size(); i++)
+		{
+			int nextNode = edge[nowPos][i].first;
+			int nodeDist = edge[nowPos][i].second;
+
+			if (goDist[nextNode] == -1 || goDist[nextNode]> nowDist + nodeDist)
+			{
+				goDist[nextNode] = nowDist + nodeDist;
+				pq.push(mp(-goDist[nextNode], nextNode));
+			}
+		}
+	}
 
 
+	memset(backDist, -1, sizeof(backDist));
+	backDist[x] = 0;
+	pq.push(mp(-backDist[x], x));
 
+	while (!pq.empty())
+	{
+		int nowDist = -pq.top().first;
+		int nowPos = pq.top().second;
+		pq.pop();
 
-for (int i = 1; i <= n; i++)
-{
-if (i != x)
-{
-if (max < distArr[i][x] + distArr[x][i])
-max = distArr[i][x] + distArr[x][i];
+		for (int i = 0; i < redge[nowPos].size(); i++)
+		{
+			int nextNode = redge[nowPos][i].first;
+			int nodeDist = redge[nowPos][i].second;
+
+			if (backDist[nextNode] == -1 || backDist[nextNode]> nowDist + nodeDist)
+			{
+				backDist[nextNode] = nowDist + nodeDist;
+				pq.push(mp(-backDist[nextNode], nextNode));
+			}
+		}
+	}
+	int max = 0;
+
+	for (int i = 1; i <= n; i++)
+	{
+		//cout << goDist[i] <<" "<< backDist[i] << endl;
+		if (max < goDist[i] + backDist[i] )
+		{
+			max = goDist[i] + backDist[i];
+		}
+	}
+	cout << max << endl;
+
+	return 0;
 }
-
-}
-*/
 #endif
