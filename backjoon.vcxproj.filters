@@ -13,6 +13,9 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Source Files\문제해결전략">
+      <UniqueIdentifier>{91f723c1-7185-41f5-897f-b1f40bc44917}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="1002_터렛.cpp">
@@ -683,6 +686,12 @@
     </ClCompile>
     <ClCompile Include="2602_돌다리 건너기.cpp">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fastMaxSum.cpp">
+      <Filter>Source Files\문제해결전략</Filter>
+    </ClCompile>
+    <ClCompile Include="게임판 덮기.cpp">
+      <Filter>Source Files\문제해결전략</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
