@@ -693,6 +693,9 @@
     <ClCompile Include="게임판 덮기.cpp">
       <Filter>Source Files\문제해결전략</Filter>
     </ClCompile>
+    <ClCompile Include="합친 LIS.cpp">
+      <Filter>Source Files\문제해결전략</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="input.txt" />
